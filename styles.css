@@ -44,7 +44,7 @@ ul, li, a {
     transition: .5s;
 }
 
-.button .btn {
+.btn {
     font-size: 18px;
     letter-spacing: 2px;
     font-weight: bold;
@@ -569,7 +569,7 @@ ul, li, a {
 
 .sub-container .viewership {
     position: relative;
-    min-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -607,24 +607,198 @@ ul, li, a {
     background: rgba(11, 44, 48, 0.55);
 }
 
-.sub-container .project-sample {
-    position: relative;
-    min-width: 45%;
-}
 
-.sub-container .project-sample .projects-container {
+.project-sample .projects-container {
     position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    
 }
 
 .project-sample .projects-container img-bx {
-    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
 }
 
 .project-sample .projects-container img {
     max-width: 100%;
-    background: var(--second-color);
     padding: 20px;
+    transition: 1.2s;
+}
+
+.project-sample .projects-container img:hover {
+    cursor: pointer;
+    transform: scale(80%);
+    transition: 1.2s;
+}
+
+/*==========tesinomials=================*/
+
+.testinomial {
+    padding: 100px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    background-color: var(--ronchi);
+}
+
+.testinomial .testi_heading {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.testinomial .testi_heading::before {
+    content: attr(data-testinomial);
+    display: block;
+    text-align: center;
+    line-height: .1;
+    backface-visibility: hidden;
+    font-family: 'Parisienne', cursive;
+    text-transform: capitalize;
+    font-size: 2.3rem;
+    color: var(--maroon-flush);
+}
+
+.testinomial .testi_img-box {
+    max-width: 100%;
+    border-radius: 20px;    
+}
+
+.testinomial .testi_img-box::before {
+    content: 'Fiverr';
+    position: absolute;
+    display: block;
+    padding: 10px;
+    background: rgba(11, 44, 48, 0.80);
+    margin: -20px;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 20px;
+    color: var(--dawn-pink);
+}
+
+.testinomial .testi_img-box img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+/*==============fiverr gigs==============*/
+.fiverr-gigs {
+    position: relative;
+    padding-top: 100px;
+}
+
+
+.fgigs-title {
+    position: absolute;
+    font-size: 3.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    line-height: .9;
+    margin-top: 30px;
+    color: var(--dawn-pink);
+}
+
+.fgigs-title::before {
+    content: attr(data-gigs);
+    display: block;
+    line-height: 0.4;
+    backface-visibility: hidden;
+    font-family: 'Parisienne', cursive;
+    text-transform: capitalize;
+    font-size: 2.3rem;
+    color: var(--ronchi);
+}
+
+.fiverr__gigs-devider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    
+}
+
+.fiverr__gigs-devider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 203px;
+}
+
+.fiverr__gigs-devider .shape-fill {
+    fill: #115653;
+}
+
+/*==============fiverr gigs cards===========*/
+
+.gig-main-container {
+    position: relative;
+    padding-top: 64px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gig-main-container .gig-card {
+    position: relative;
+    width: 400px;
+    margin: 20px;
+    padding: 16px;
+    max-height: 100vh;
+    transition: 1.2s;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 3px 6px 6px;
+    border-radius: 10px;
+}
+
+.gig-main-container .gig-card:hover {
+    transform: scale(110%);
+    transition: 1.2s;
+}
+
+.gig-main-container .gig-card .gig-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.gig-main-container .gig-card .gig-title {
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.gig-main-container .gig-card h3 {
+    padding-bottom: 20px;
+}
+
+.gig-main-container .gig-card .btn {
+    padding: 8px 16px;
+    background-color: var(--maroon-flush);
+    margin-top: 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: .5s;
+}
+
+.gig-main-container .gig-card .btn:hover {
+    opacity: .75;
+    transition: .5s;
 }
