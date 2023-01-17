@@ -266,28 +266,28 @@ ul, li, a {
 }
 
 .popup-wrapper .popup-container img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     margin-bottom: 8px;
 }
 
 .popup-wrapper .popup-container .icons {
-    width: 80px;
+    width: 50px;
     background-color: #00b422;
-    height: 80px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--dawn-pink);
-    font-size: 40px;
+    font-size: 30px;
     border-radius: 100%;
     margin-bottom: 8px;
 }
 
 
 .popup-wrapper .popup-container h1 {
-    color: var(--dawn-pink);
+    color: var(--ronchi);
     text-transform: uppercase;
     padding-bottom: 10px;
     font-size: 20px;
@@ -426,7 +426,7 @@ ul, li, a {
 
 .js-animated {
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(3px);
     transform: translateY(100px);
     transition: all 1s ease-out;
 }
@@ -561,10 +561,13 @@ ul, li, a {
     padding-bottom: 30px;
 }
 
+
 .projects .sub-container {
     position: relative;
     display: flex;
+    width: 100%;
     justify-content: center;
+    align-items: center;
 }
 
 .sub-container .viewership {
@@ -606,34 +609,27 @@ ul, li, a {
     font-weight: 900;
     background: rgba(11, 44, 48, 0.55);
 }
-
-
-.project-sample .projects-container {
-    position: relative;
-    width: 100%;
+.project-sample,
+.project-sample img-bx {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-
-.project-sample .projects-container img-bx {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
-
-.project-sample .projects-container img {
     max-width: 100%;
+    padding-bottom: 50px;
+}
+
+.project-sample img {
+    max-width: 90%;
+    margin-left: 35px;
     padding: 20px;
     transition: 1.2s;
+    border-radius: 20px;
+    background-color: var(--second-color);
 }
 
-.project-sample .projects-container img:hover {
+.project-sample img:hover {
     cursor: pointer;
-    transform: scale(80%);
+    transform: scale(110%);
     transition: 1.2s;
 }
 
@@ -754,7 +750,7 @@ ul, li, a {
 
 .gig-main-container .gig-card {
     position: relative;
-    width: 400px;
+    width: 300px;
     margin: 20px;
     padding: 16px;
     max-height: 100vh;
@@ -802,3 +798,6 @@ ul, li, a {
     opacity: .75;
     transition: .5s;
 }
+
+/*============contact form===================*/
+
