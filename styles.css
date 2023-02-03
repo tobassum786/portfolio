@@ -245,7 +245,7 @@ container .text-bx .image-box img::before {
     display: flex;
     justify-content: flex-end;
     margin: 10px 0;
-    padding: 0 10px;
+    padding: 0 25px;
     font-size: 18px;
     color: var(--maroon-flush);
     cursor: pointer;
@@ -310,12 +310,32 @@ container .text-bx .image-box img::before {
     font-weight: 500;
 }
 
-.popup-wrapper .popup-container .button {
-    margin-top: 24px;
+.popup-container .services-btn {
+    margin-top: 10px;
+    display: flex;
+    padding: 10px;
+    direction: rtl;
+    width: 100%;
+    float: right;
 }
 
-.popup-wrapper .popup-container .pop-btn {
-    font-size: 12px;
+.popup-container .services-btn a {
+    font-size: 16px;
+    color: var(--maroon-flush);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+.popup-container .services-btn a i {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.popup-container .services-btn .service-link:hover {
+    color: var(--dawn-pink);
+    opacity: .6;
 }
 
 /*==================skills section====================*/
